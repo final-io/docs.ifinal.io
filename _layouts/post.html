@@ -6,7 +6,7 @@
 {% include navbar/navbar.html %}
 <!-- End Navbar -->
 <!-- End Navbar -->
-<div class="page-header header-filter header-small" data-parallax="true"
+<div class="page-header header-filter header-small"  data-parallax="true"
      style="background-image: url('{{ page.banner }}?w=1920&h=600&fit=crop'); padding-top: 100px;">
   <div class="container">
     <div class="row">
@@ -24,7 +24,7 @@
 
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div class="main main-raised" id="app" style="background-color: transparent">
 
     <!--Blog Info-->
@@ -89,10 +89,16 @@
           <div class="tab-content tab-space">
             <div class="tab-pane active" id="preview">
               <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-2 sticky-top ">
+                  <div class="sticky-top" style="top: 100px;">
+                    {% include sidebar/sidebar.html %}
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <h1>{{ page.title }}</h1>
                   <article class="markdown" id="markdown"></article>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <div class="sticky-sidebar sticky-top terms-sidebar" style="top: 100px;">
                     <div class="toc" id="toc">
                     </div>
@@ -114,9 +120,12 @@
   {% include footer.html %}
 </div>
 {% include script.html %}
-<script src="/assets/app/post.js"></script>
+{% include jekyll/post.jekyll %}
 <script>
-  $(document).ready(function () {
+
+</script>
+<script>
+  $(document).ready(function() {
     var typedTexts = document.querySelectorAll('.typed-text');
 
     if (typedTexts.length && window.Typed) {

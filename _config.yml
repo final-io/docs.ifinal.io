@@ -13,21 +13,21 @@ highlighter: rouge
 kramdown:
   input: GFM
   auto_ids: true
-#  parse_block_html: true
-#  parse_span_html: true
+  #  parse_block_html: true
+  #  parse_span_html: true
   syntax_highlighter: rouge
-#  syntax_highlighter_opts:
+    #  syntax_highlighter_opts:
     # Rouge Options › https://github.com/jneen/rouge#full-options
-    #    line_numbers: false # bad idea, spans don't need linenos and would inherit this option
-#    line_format: '%i'
-#    table_class: 'rouge-table'
-#    span:
-#      line_numbers: false
-#    block:
-#      line_numbers: true
-#      start_line: 1
-#  html_to_native: true
-#  start_line: 1
+  #    line_numbers: false # bad idea, spans don't need linenos and would inherit this option
+  #    line_format: '%i'
+  #    table_class: 'rouge-table'
+  #    span:
+  #      line_numbers: false
+  #    block:
+  #      line_numbers: true
+  #      start_line: 1
+  #  html_to_native: true
+  #  start_line: 1
   extensions:
     - autolink
     - footnotes
@@ -58,12 +58,14 @@ plugins:
   - jekyll-default-layout
   - jekyll-gist
   - jekyll-optional-front-matter
-#  - jekyll-paginate
-#  - jekyll-paginate-v2
+  #  - jekyll-paginate
+  #  - jekyll-paginate-v2
   - jekyll-titles-from-headings
 collections_dir: pages
 collections:
-  projects:
+  spring:
+    output: true
+  final:
     output: true
 defaults:
   - scope:

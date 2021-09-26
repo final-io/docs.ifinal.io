@@ -7,9 +7,14 @@ menus:
     menus:
       - id: final-annotation-core
         name: 'Final Annotation Core'
+      - id: final-annotation-data
+        name: 'Final Annotation Data'
   - id: final-framework
     icon: home
     name: 'Final Framework'
+    menus:
+      - id: final-json
+        name: 'Final Json'
   - id: final-data
     icon: save
     name: 'Final Data'

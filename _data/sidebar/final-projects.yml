@@ -1,6 +1,9 @@
-logo: /assets/images/logos/spring.svg
-name: DevOps
+logo: /assets/img/logos/github.svg
+name: Final Projects
 menus:
+  - id: overview
+    icon: dashboard
+    name: 'OverView'
   - id: final-annotation
     icon: alternate_email
     name: 'Final Annotation'
@@ -9,12 +12,16 @@ menus:
         name: 'Final Annotation Core'
       - id: final-annotation-data
         name: 'Final Annotation Data'
+      - id: final-annotation-cache
+        name: 'Final Annotation Cache'
   - id: final-framework
     icon: home
     name: 'Final Framework'
     menus:
       - id: final-json
         name: 'Final Json'
+      - id: final-web
+        name: 'Final Web'
   - id: final-data
     icon: save
     name: 'Final Data'

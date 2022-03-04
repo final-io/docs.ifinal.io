@@ -4,16 +4,9 @@ menus:
   - id: overview
     icon: dashboard
     name: 'OverView'
-  - id: final-annotation
-    icon: alternate_email
-    name: 'Final Annotation'
-    menus:
-      - id: final-annotation-core
-        name: 'Final Annotation Core'
-      - id: final-annotation-data
-        name: 'Final Annotation Data'
-      - id: final-annotation-cache
-        name: 'Final Annotation Cache'
+  - id: final-boot
+    icon: do_not_disturb_on_total_silence
+    name: 'Final Boot'
   - id: final-framework
     icon: home
     name: 'Final Framework'
@@ -28,12 +21,16 @@ menus:
     menus:
       - id: final-data-mybatis
         name: Final Data Mybatis
-  - id: final-boot
-    icon: do_not_disturb_on_total_silence
-    name: 'Final Boot'
-  - id: final-cloud
-    icon: cloud
-    name: 'Final Cloud'
+  - id: final-annotation
+    icon: alternate_email
+    name: 'Final Annotation'
+    menus:
+      - id: final-annotation-core
+        name: 'Final Annotation Core'
+      - id: final-annotation-data
+        name: 'Final Annotation Data'
+      - id: final-annotation-cache
+        name: 'Final Annotation Cache'
   - id: auto
     icon: hdr_auto
     name: 'Final Auto'

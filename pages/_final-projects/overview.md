@@ -31,13 +31,13 @@ formatterOn: "@formatter:on"
       <td>
         <a href="https://github.com/final-projects/final-auto">final-auto</a>
       </td>
-      <td>
-        <img class="display: inline-block;" src="https://github.com/final-projects/final-auto/workflows/ci/badge.svg"/>
-        <img class="display: inline-block" src="https://img.shields.io/maven-central/v/org.ifinalframework.auto/final-auto?label=maven&color=success"/>
-        <img class="display: inline-block" src="https://img.shields.io/nexus/r/org.ifinalframework.auto/final-auto?server=https://s01.oss.sonatype.org"/>
-        <img class="display: inline-block" src="https://img.shields.io/nexus/s/org.ifinalframework.auto/final-auto?server=https://s01.oss.sonatype.org"/>
-        <img class="display: inline-block" src="https://img.shields.io/github/stars/final-projects/final-auto"/>
-        <img class="display: inline-block" src="https://codecov.io/gh/final-projects/final-auto/branch/main/graph/badge.svg"/>
+      <td class="text-center">
+        <img style="display: inline-block;" src="https://github.com/final-projects/final-auto/workflows/ci/badge.svg"/>
+        <img style="display: inline-block" src="https://img.shields.io/maven-central/v/org.ifinalframework.auto/final-auto?label=maven&color=success"/>
+        <img style="display: inline-block" src="https://img.shields.io/nexus/r/org.ifinalframework.auto/final-auto?server=https://s01.oss.sonatype.org"/>
+        <img style="display: inline-block" src="https://img.shields.io/nexus/s/org.ifinalframework.auto/final-auto?server=https://s01.oss.sonatype.org"/>
+        <img style="display: inline-block" src="https://img.shields.io/github/stars/final-projects/final-auto"/>
+        <img style="display: inline-block" src="https://codecov.io/gh/final-projects/final-auto/branch/main/graph/badge.svg"/>
       </td>
     </tr>
     <!-- final-annotation -->
@@ -45,7 +45,7 @@ formatterOn: "@formatter:on"
       <td>
         <a href="https://github.com/final-projects/final-annotation">final-annotation</a>
       </td>
-      <td>
+      <td class="text-center">
         <img src="https://github.com/final-projects/final-annotation/workflows/ci/badge.svg"/>
         <img src="https://img.shields.io/maven-central/v/org.ifinalframework.annotation/final-annotation?label=maven&color=success"/>
         <img src="https://img.shields.io/nexus/r/org.ifinalframework.annotation/final-annotation?server=https://s01.oss.sonatype.org"/>
@@ -59,7 +59,7 @@ formatterOn: "@formatter:on"
       <td>
         <a href="https://github.com/final-projects/final-framework">final-framework</a>
       </td>
-      <td>
+      <td class="text-center">
         <img src="https://github.com/final-projects/final-framework/workflows/ci/badge.svg"/>
         <img src="https://img.shields.io/maven-central/v/org.ifinalframework/final-framework?label=maven&color=success"/>
         <img src="https://img.shields.io/nexus/r/org.ifinalframework/final-framework?server=https://s01.oss.sonatype.org"/>
@@ -73,7 +73,7 @@ formatterOn: "@formatter:on"
       <td>
         <a href="https://github.com/final-projects/final-data">final-data</a>
       </td>
-      <td>
+      <td class="text-center">
         <img src="https://github.com/final-projects/final-data/workflows/ci/badge.svg"/>
         <img src="https://img.shields.io/maven-central/v/org.ifinalframework.data/final-data?label=maven&color=success"/>
         <img src="https://img.shields.io/nexus/r/org.ifinalframework.data/final-data?server=https://s01.oss.sonatype.org"/>
@@ -87,7 +87,7 @@ formatterOn: "@formatter:on"
       <td>
         <a href="https://github.com/final-projects/final-boot">final-boot</a>
       </td>
-      <td>
+      <td class="text-center">
         <img src="https://github.com/final-projects/final-boot/workflows/ci/badge.svg"/>
         <img src="https://img.shields.io/maven-central/v/org.ifinalframework.boot/final-boot?label=maven&color=success"/>
         <img src="https://img.shields.io/nexus/r/org.ifinalframework.boot/final-boot?server=https://s01.oss.sonatype.org"/>

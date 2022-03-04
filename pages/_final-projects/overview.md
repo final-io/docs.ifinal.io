@@ -12,6 +12,10 @@ formatterOn: "@formatter:on"
 
 # overview
 
+一个致力于提供开箱即用的Java后端服务开发脚手架项目。
+
+
+## 核心项目
 
 
 <table>

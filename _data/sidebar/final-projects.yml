@@ -16,8 +16,10 @@ menus:
       - id: final-web
         name: 'Final Web'
         menus:
+          - id: argument-resolver
+            name: 参数解析器
           - id: response-body-advice
-            name: 统一结果集
+            name: 响应体通知
   - id: final-data
     icon: save
     name: 'Final Data'

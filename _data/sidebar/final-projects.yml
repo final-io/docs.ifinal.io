@@ -11,6 +11,13 @@ menus:
     icon: home
     name: 'Final Framework'
     menus:
+      - id: final-context
+        name: 'Final Context'
+        menus:
+          - id: import-resource
+            name: 资源导入
+          - id: spel
+            name: SpEL
       - id: final-json
         name: 'Final Json'
       - id: final-web

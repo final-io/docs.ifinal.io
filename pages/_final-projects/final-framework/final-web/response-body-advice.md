@@ -12,7 +12,28 @@ formatterOn: "@formatter:on"
 
 # 统一结果集
 
-被`@ResponseBody`标记的接口方法的返回值会进行统一的结果集封装。因此，业务开发者仅需要关心业务数据的处理，不需要再对数据进行额外的包装处理。
+为了给接口调用方（如前端）返回统一的接口对象（`Result`），一般情况下，开发者需要编写大量与示例代码类似的重复代码。
+
+```java
+@RestControoler
+public class ResultControoler{
+    @GetMapping("/result")
+    public Result<?> result(Params params){
+        try{
+            // do domething
+            return Result.success(data);
+        }catch(Exception e){
+            return Result.failure(e.getMessage());
+        }
+    }
+}
+```
+上述模板代码在一个项目中存在大量的重复：
+
+* 每一个Controller方法都需要写try-catch代码块。
+* Result的实例化散落各处，对后期扩展不友好。
+
+为解决上述问题，Final对被`@ResponseBody`标记的接口方法的返回值会进行统一的结果集封装。因此，业务开发者仅需要关心业务数据的处理，不需要再对数据进行额外的包装处理。
 
 ## 一般场景
 

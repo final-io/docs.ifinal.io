@@ -40,9 +40,9 @@ menus:
       - id: final-annotation-core
         name: 'Final Annotation Core'
       - id: final-annotation-data
-        name: 'Final Annotation Data'
+        name: 'ORM'
       - id: final-annotation-cache
-        name: 'Final Annotation Cache'
+        name: 'Cache'
   - id: auto
     icon: hdr_auto
     name: 'Final Auto'

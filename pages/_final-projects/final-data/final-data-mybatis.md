@@ -28,12 +28,12 @@ formatterOn: "@formatter:on"
 
 参数说明
 
-|    参数名       |     类型     | 非空 |         说明         |
-|:---------:|:----------:|:---:|:------------------:|
-|  `table`  |   String   |  N  |   表名，默认为实体对应的表名    |
-|  `view`   |   Class    |  N  |         视图         |
-| `ignore`  |  boolean   |  N  | INSERT IGNORE INTO |
-|  `list`   | List/Array |  Y  |        实体列表        |
+|    参数名       |     类型     | 非空 |         说明          |
+|:---------:|:----------:|:---:|:-------------------:|
+|  `table`  |   String   |  N  |    表名，默认为实体对应的表名    |
+|  `view`   |   Class    |  N  |         视图          |
+| `ignore`  |  boolean   |  N  | INSERT IGNORE INTO  |
+|  `list`   | List/Array |  Y  |        实体列表         |
 
 
 ## 特性

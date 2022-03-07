@@ -41,6 +41,8 @@ menus:
         name: 'Final Annotation Core'
       - id: final-annotation-data
         name: 'ORM'
+      - id: final-annotation-query
+        name: 'Query'
       - id: final-annotation-cache
         name: 'Cache'
   - id: auto

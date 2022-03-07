@@ -31,6 +31,8 @@ menus:
     icon: save
     name: 'Final Data'
     menus:
+      - id: final-data-core
+        name: 'Core'
       - id: final-data-mybatis
         name: Final Data Mybatis
   - id: final-annotation
@@ -38,7 +40,7 @@ menus:
     name: 'Final Annotation'
     menus:
       - id: final-annotation-core
-        name: 'Final Annotation Core'
+        name: 'Core'
       - id: final-annotation-data
         name: 'ORM'
       - id: final-annotation-query

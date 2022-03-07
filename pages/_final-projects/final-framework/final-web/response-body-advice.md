@@ -14,6 +14,7 @@ formatterOn: "@formatter:on"
 
 被`@ResponseBody`标记的接口方法的返回值会进行统一的结果集封装。因此，业务开发者仅需要关心业务数据的处理，不需要再对数据进行额外的包装处理。
 
+## 一般场景
 
 * HelloController
 
@@ -38,6 +39,53 @@ public class HelloController{
   "code": "0",
   "message": "success",
   "data": "hello world!",
+  "trace": "7aba435f-69d2-4c44-a944-315107623a92",
+  "timestamp": 1605063263491,
+  "duration": 0.063,
+  "address": "127.0.0.1:80",
+  "locale": "en",
+  "timeZone": "Asia/Shanghai",
+  "success": true
+}
+```
+
+## 分页场景
+
+
+**PageController**
+
+```java
+@RestController
+public class PageController{
+    @GetMapping("/page)
+    public List<?> page(int page,int size){
+        PageHelper.startPage(page.size);
+        // do page query
+        return ...;
+    }
+
+}
+```
+
+**PageResult**
+
+```json
+{
+  "status": 0,
+  "description": "success",
+  "code": "0",
+  "message": "success",
+  "data": [
+    {}
+  ],
+  "pagination": {
+    "page": 1,
+    "size": 1,
+    "pages": 1,
+    "total": 1,
+    "firstPage": true,
+    "lastPage": 1
+  },
   "trace": "7aba435f-69d2-4c44-a944-315107623a92",
   "timestamp": 1605063263491,
   "duration": 0.063,

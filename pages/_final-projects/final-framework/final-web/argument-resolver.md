@@ -44,3 +44,17 @@ public class User{
 ```shell
 curl http://localhost:8080/json?user={"user":"xiaoMing","age":18}
 ```
+
+## @RequestExcelPart(开发中)
+
+使用`@RequestExcelPart`注解接收Excel文件，支持`Stream<T>`和`List<T>`。
+
+```java
+@RestController
+public class ExcelController{
+    @PostMapping("/excel")
+    pulbic void excel(@RequestExcelPart List<User> users){
+        // do something...
+    }
+}
+```

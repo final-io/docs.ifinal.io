@@ -31,8 +31,6 @@ menus:
     icon: save
     name: 'Final Data'
     menus:
-      - id: final-data-annotation
-        name: Final Data Annotation
       - id: final-data-mybatis
         name: Final Data Mybatis
   - id: final-annotation

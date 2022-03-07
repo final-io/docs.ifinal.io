@@ -11,3 +11,12 @@ formatterOn: "@formatter:on"
 ---
 
 # spel
+
+
+## Compare
+
+使用`SpEL`表达式比较两个值对象的值是否完全相等
+
+```java
+boolean equals = Spel.compare(leftValue,rightValue,expressions[,listener]);
+```

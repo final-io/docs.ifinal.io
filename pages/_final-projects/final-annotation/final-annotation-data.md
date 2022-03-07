@@ -29,12 +29,23 @@ fds
 |   `@Table`    | 指定实体与数据表的映射关系 |
 |   `@Column`   | 指定属性与数据列的映射关系 |
 | `@PrimaryKey` |      指定该属性为主键      |
-|  `@Version`   |     指定该属性为版本列     |
-|               |                            |
-|               |                            |
-|               |                            |
-|               |                            |
-|               |                            |
+|    `@Final`     |                指定不可修改                |
+|   `@Default`    |                指定不需插入                |
+|   `@Keyword`    |                   关键字                   |
+|     `@Json`     |                    Json                    |
+|  `@PrimaryKey`  |                    主键                    |
+|   `@AutoInc`    |                    自增                    |
+|   `@ReadOnly`   |                    只读                    |
+|  `@Transient`   |                  非数据列                  |
+|  `@WriteOnly`   |                    只写                    |
+|   `@Virtual`    |                   虚拟列                   |
+|   `@Version`    | 版本,更新时自动执行`version = version + 1` |
+|   `@Created`    |         创建时间, @Final,@Default          |
+|   `@Creator`    |                创建,@Final                 |
+| `@LastModified` |                末次修改时间                |
+| `@LastModifier` |                 末次修改人                 |
+|                 |                                            |
+|                 |                                            |
 
 ## Built-In
 

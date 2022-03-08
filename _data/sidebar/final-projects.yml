@@ -12,6 +12,8 @@ menus:
         name: 'API'
       - id: repository
         name: 'Repository'
+      - id: query
+        name: 'Query'
       - id: cache
         name: 'Cache'
       - id: i18n

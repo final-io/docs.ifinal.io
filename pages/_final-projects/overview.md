@@ -1,18 +1,17 @@
 ---
-formatterOff: "@formatter:off"
-title: 概述 
-subtitle: overview 
-summary: overview
-categories: [] 
-tags: [] 
-date: 2021-09-27 13:30:18 +800 
-version: 1.0
-formatterOn: "@formatter:on"
+
 ---
 
-# overview
+# 概述
 
 一个致力于提供开箱即用的Java后端服务开发脚手架项目。
+
+
+
+## 特性
+
+* 简化的[API](./final-features/api)开发方式
+* [国际化](./final-features/i18n)
 
 
 ## 核心项目

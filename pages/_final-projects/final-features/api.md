@@ -1,6 +1,6 @@
 ---
 formatterOff: "@formatter:off"
-title: 统一结果集
+title: API
 subtitle: response-body-advice 
 summary: response-body-advice
 categories: [] 
@@ -10,7 +10,13 @@ version: 1.0
 formatterOn: "@formatter:on"
 ---
 
-# 统一结果集
+# API
+
+为简化API接口开发，框架提供了统一的结果
+
+
+
+## 统一结果集
 
 为了给接口调用方（如前端）返回统一的接口对象（`Result`），一般情况下，开发者需要编写大量与示例代码类似的重复代码。
 
@@ -35,7 +41,7 @@ public class ResultControoler{
 
 为解决上述问题，Final对被`@ResponseBody`标记的接口方法的返回值会进行统一的结果集封装。因此，业务开发者仅需要关心业务数据的处理，不需要再对数据进行额外的包装处理。
 
-## 一般场景
+### 一般场景
 
 * HelloController
 
@@ -70,7 +76,7 @@ public class HelloController{
 }
 ```
 
-## 分页场景
+### 分页场景
 
 
 **PageController**

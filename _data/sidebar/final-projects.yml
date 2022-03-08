@@ -1,9 +1,17 @@
-logo: /assets/img/logos/github.svg
+﻿logo: /assets/img/logos/github.svg
 name: Final Projects
 menus:
   - id: overview
     icon: dashboard
     name: 'OverView'
+  - id: final-features
+    icon: tips_and_updates
+    name: 'Features'
+    menus:
+      - id: api
+        name: API
+      - id: i18n
+        name: I18N
   - id: final-boot
     icon: do_not_disturb_on_total_silence
     name: 'Final Boot'

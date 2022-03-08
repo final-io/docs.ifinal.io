@@ -24,7 +24,7 @@ public class UserService{
     @Resource
     private StringRedisTemplate stringRedisTemplate;
     
-   	@Resource
+    @Resource
     private UserMapper userMapper;
     
     User findById(Long id){

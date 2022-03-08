@@ -12,6 +12,8 @@ menus:
         name: API
       - id: i18n
         name: I18N
+      - id: cache
+        name: Cache
 #  - id: final-boot
 #    icon: do_not_disturb_on_total_silence
 #    name: 'Final Boot'

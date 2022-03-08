@@ -3,10 +3,10 @@ name: Final Projects
 menus:
   - id: overview
     icon: dashboard
-    name: 'OverView'
+    name: '概览'
   - id: final-features
     icon: tips_and_updates
-    name: 'Features'
+    name: '特性'
     menus:
       - id: api
         name: 'API'

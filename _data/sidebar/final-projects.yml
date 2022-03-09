@@ -8,8 +8,8 @@ menus:
     icon: touch_app
     name: '快速入门'
     menus:
-      - id: web
-        name: 'WEB'
+      - id: api
+        name: 'API'
       - id: orm
         name: 'ORM'
       - id: cache

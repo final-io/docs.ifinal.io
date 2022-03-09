@@ -3,8 +3,8 @@ formatterOff: "@formatter:off"
 title: Cache
 subtitle: final-annotation-cache 
 summary: final-annotation-cache
-categories: [] 
-tags: [] 
+categories:[]
+tags:[] 
 date: 2021-09-27 13:59:42 +800 
 version: 1.0
 formatterOn: "@formatter:on"

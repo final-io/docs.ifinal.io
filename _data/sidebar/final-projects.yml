@@ -4,14 +4,24 @@ menus:
   - id: overview
     icon: dashboard
     name: '概览'
+  - id: quick-start
+    icon: touch_app
+    name: '快速入门'
+    menus:
+      - id: web
+        name: 'WEB'
+      - id: orm
+        name: 'ORM'
+      - id: cache
+        name: 'Cache'
   - id: final-features
     icon: tips_and_updates
     name: '特性'
     menus:
       - id: api
         name: 'API'
-      - id: crud
-        name: 'CRUD'
+      - id: orm
+        name: 'ORM'
       - id: query
         name: 'Query'
       - id: cache

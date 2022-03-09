@@ -10,8 +10,8 @@ menus:
     menus:
       - id: api
         name: 'API'
-      - id: repository
-        name: 'Repository'
+      - id: crud
+        name: 'CRUD'
       - id: query
         name: 'Query'
       - id: cache

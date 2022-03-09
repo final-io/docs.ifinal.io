@@ -9,11 +9,11 @@ menus:
     name: '快速入门'
     menus:
       - id: api
-        name: 'API'
+        name: '接口'
       - id: orm
-        name: 'ORM'
+        name: '对象缓存映射'
       - id: cache
-        name: 'Cache'
+        name: '缓存'
   - id: final-features
     icon: tips_and_updates
     name: '特性'

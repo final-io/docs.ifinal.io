@@ -1,78 +1,59 @@
 <!DOCTYPE html>
-<html lang="zh">
-{% assign fileType = page.path | split: '.' | last %}
-{% include head.html %}
-<body class="off-canvas-sidebar blog-posts " data-spy="scroll" data-target="#toc" data-offset="50">
-<div class="wrapper">
+<html lang="zh-CN" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% include sidebar/sidebar.html %}
-    <div class="main-panel">
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Falcon | Dashboard &amp; Web App Template</title>
 
-        <!-- Navbar -->
-        {% include navbar/navbar.html %}
-        <!-- End Navbar -->
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    {% include favicons.html %}
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://prium.github.io/falcon/v3.8.0/assets/js/config.js"></script>
+    <script src="https://prium.github.io/falcon/v3.8.0/vendors/overlayscrollbars/OverlayScrollbars.min.js"></script>
 
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    {% include style-sheets.html %}
+</head>
+
+<body>
+<!-- ===============================================-->
+<!--    Main Content-->
+<!-- ===============================================-->
+<main class="main" id="top">
+    <div class="container" data-layout="container">
+        <script>
+            var isFluid = JSON.parse(localStorage.getItem('isFluid'));
+            if (isFluid) {
+                var container = document.querySelector('[data-layout]');
+                container.classList.remove('container');
+                container.classList.add('container-fluid');
+            }
+        </script>
+        {% include sidebar.html %}
         <div class="content">
-
-            <div class="tab-content">
-                <div class="tab-pane {% if fileType == 'html'%} active {% endif %}" id="preview">
-                    {{ content }}
-                </div>
-                <div class="tab-pane {% if fileType == 'md'%} active {% endif %}" id="article">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <article class="markdown" id="markdown"></article>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="sticky-sidebar sticky-top terms-sidebar" style="top: 100px;">
-                                <div class="toc" id="toc">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane markdown" id="source">
-                    <textarea id="editor" class="d-none" hidden style="width: 100%" rows="100">
-                        {% if fileType == 'md' %}
-                        {% include_relative {{ page.path | split: "/" | last  }} %}
-                        {% endif %}
-
-                        {% if page.docs == true %}
-                        {% include_relative {{ page.path | replace: '.html' : '-docs.md' | split: "/" | last  }} %}
-                        {% endif %}
-                    </textarea>
-                    <pre><code id="code"></code></pre>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            {% include footer.html %}
+            {% include navbar/navbar.html %}
+            {{ content }}
         </div>
     </div>
-</div>
-
-{% include script.html %}
+</main>
+<!-- ===============================================-->
+<!--    End of Main Content-->
+<!-- ===============================================-->
+{% include setting-panel.html %}
+<!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+{% include scripts.html %}
 {% include jekyll/sidebar.jekyll %}
-
-<script src="/assets/app/markdown.js"></script>
-
-<script>
-    $(document).ready(function () {
-        var typedTexts = document.querySelectorAll('.typed-text');
-
-        if (typedTexts.length && window.Typed) {
-            typedTexts.forEach(function (typedText) {
-                return new window.Typed(typedText, {
-                    strings: JSON.parse(typedText.getAttribute("data-typed-text")),
-                    typeSpeed: 30,
-                    loop: true,
-                    backDelay: 1500
-                });
-            });
-        }
-    });
-</script>
 </body>
 
 </html>

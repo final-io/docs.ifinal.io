@@ -224,9 +224,9 @@
           distractionFreeMode: false  // Facebook-like distraction free mode
         })
         //
-        gitalk.render('gitalk-container', function (data) {
-          console.log(data);
-        });
+        //gitalk.render('gitalk-container', function (data) {
+        //  console.log(data);
+        //});
       },
       mermaid() {
         mermaid.initialize({

@@ -1,5 +1,13 @@
 ---
-
+formatterOff: "@formatter:off"
+title: 概览
+subtitle: API接口
+summary: API接口
+categories: []
+tags: []
+date: 2022-03-09 13:30:18 +800
+version: 1.0
+formatterOn: "@formatter:on"
 ---
 
 # 概述
@@ -13,6 +21,32 @@
 * 简化的[API](./final-features/api)开发方式
 * [国际化](./final-features/i18n)
 
+## 依赖
+
+### Maven
+
+* Parent
+
+```xml
+<parent>
+    <groupId>org.ifinalframework.boot</groupId>
+    <artifactId>final-boot-parent</artifactId>
+    <version>${latest.release.version}</version>
+    <relativePath/> <!-- lookup parent from repository -->
+</parent>
+```
+
+* DependencyManagement
+
+```xml
+<dependency>
+    <groupId>org.ifinalframework.boot</groupId>
+    <artifactId>final-boot-parent</artifactId>
+    <version>${latest.release.version}</version>
+    <scope>import</scope>
+    <type>pom</type>
+</dependency>
+```
 
 ## 核心项目
 
@@ -103,3 +137,5 @@
 </table>
 
 > 请`Star`上述项目，谢谢🙏
+
+

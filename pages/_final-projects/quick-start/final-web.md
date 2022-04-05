@@ -1,6 +1,6 @@
 ---
 formatterOff: "@formatter:off"
-title: API接口
+title: Final Web
 subtitle: API接口
 summary: API接口
 categories: [] 
@@ -10,7 +10,7 @@ version: 1.0
 formatterOn: "@formatter:on"
 ---
 
-
+# Final Web
 
 ## 引入依赖
 
@@ -24,9 +24,11 @@ formatterOn: "@formatter:on"
 
 > 注意：请将 `${latest.release.version}` 更改为实际的版本号。
 
+## 用法
 
+### Rest Api
 
-## 定义接口
+首先，定义如下的RestController
 
 ```java
 @SpringBootApplication
@@ -40,13 +42,13 @@ public class DemoApplication {
 }
 ```
 
-
-
-## 访问接口
+访问`/hello`
 
 ```shell
 curl http://localhost:8080/hello
 ```
+
+将看到如下的结果：
 
 ```json
 {
@@ -66,3 +68,21 @@ curl http://localhost:8080/hello
 ```
 
 > 注意：接口返回的数据由框架封装为统一的结果对象返回，开发者只需要返回核心业务数据。
+
+### RequestJsonParam
+
+```java
+@SpringBootApplication
+@RestController
+public class JsonParamApplication{
+    
+    @GetMapping("/jsonParam")
+    public List<Integer> jsonParam(@RequestJsonParam List<Integer> list){
+        return list;
+    }
+}
+```
+
+```shell
+curl http://localhost:8080/jsonParam?list=[1,2,3]
+```

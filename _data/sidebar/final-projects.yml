@@ -8,8 +8,8 @@ menus:
     icon: touch_app
     name: '快速入门'
     menus:
-      - id: api
-        name: '接口'
+      - id: final-web
+        name: 'Final-Web'
       - id: orm
         name: '对象缓存映射'
       - id: cache
@@ -22,55 +22,27 @@ menus:
         name: 'API'
       - id: orm
         name: 'ORM'
+      - id: pageable
+        name: 'Pageable'
       - id: query
         name: 'Query'
       - id: cache
         name: 'Cache'
       - id: i18n
         name: 'I18N'
-#  - id: final-boot
-#    icon: do_not_disturb_on_total_silence
-#    name: 'Final Boot'
-#  - id: final-framework
-#    icon: home
-#    name: 'Final Framework'
-#    menus:
-#      - id: final-context
-#        name: 'Final Context'
-#        menus:
-#          - id: import-resource
-#            name: 资源导入
-#          - id: spel
-#            name: SpEL
-#      - id: final-json
-#        name: 'Final Json'
-#      - id: final-web
-#        name: 'Final Web'
-#        menus:
-#          - id: argument-resolver
-#            name: 参数解析器
-#          - id: response-body-advice
-#            name: 响应体通知
-#  - id: final-data
-#    icon: save
-#    name: 'Final Data'
-#    menus:
-#      - id: final-data-core
-#        name: 'Core'
-#      - id: final-data-mybatis
-#        name: Final Data Mybatis
-#  - id: final-annotation
-#    icon: alternate_email
-#    name: 'Final Annotation'
-#    menus:
-#      - id: final-annotation-core
-#        name: 'Core'
-#      - id: final-annotation-data
-#        name: 'ORM'
-#      - id: final-annotation-query
-#        name: 'Query'
-#      - id: final-annotation-cache
-#        name: 'Cache'
-#  - id: auto
-#    icon: hdr_auto
-#    name: 'Final Auto'
+  - id: modules
+    icon: extension
+    name: '模块'
+    menus:
+      - id: final-mybatis
+        name: Final Mybatis
+        menus:
+          - id: mapper
+            name: 'Mapper'
+          - id: extensions
+            name: '插件'
+            menus:
+              - id: pageable-interceptor
+                name: '分页插件'
+              - id: parameter-inject-interceptor
+                name: '参数注入插件'

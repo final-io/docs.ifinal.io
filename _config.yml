@@ -67,6 +67,8 @@ collections:
     output: true
   final-projects:
     output: true
+  final-data:
+    output: true
 defaults:
   - scope:
       path: ""

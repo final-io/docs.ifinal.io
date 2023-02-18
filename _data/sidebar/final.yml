@@ -34,6 +34,11 @@ menus:
     icon: extension
     name: '模块'
     menus:
+      - id: final-framework
+        name: Final Framework
+        menus:
+          - id: final-web
+            name: 'Final Web'
       - id: final-mybatis
         name: Final Mybatis
         menus:

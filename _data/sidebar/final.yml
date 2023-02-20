@@ -30,6 +30,14 @@ menus:
         name: 'Cache'
       - id: i18n
         name: 'I18N'
+  - id: user-manual
+    icon: book
+    name: '用户手册'
+    menus:
+      - id: enums
+        name: '枚举'
+      - id: arguments
+        name: '参数'
   - id: dev-manual
     icon: menu_book
     name: '开发者手册'

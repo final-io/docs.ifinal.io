@@ -194,7 +194,7 @@
                                                 <div class="row text-center gx-0 gy-0">
                                                     <div class="col-4" v-for="item in modules">
                                                         <a class="d-block hover-bg-200 px-2 py-3 rounded-3 text-center text-decoration-none"
-                                                           href="/final-projects/overview" target="_blank">
+                                                           :href="item.link" target="_blank">
                                                             <div class="avatar avatar-2xl">
                                                                 <img class="rounded-circle"
                                                                      :src="item.logo"

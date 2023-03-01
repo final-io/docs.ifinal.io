@@ -1,0 +1,12 @@
+﻿logo: /assets/img/logos/github.svg
+name: Final Projects
+menus:
+  - id: overview
+    icon: dashboard
+    name: '概览'
+  - id: boot
+    icon: dashboard
+    name: 'Spring Boot'
+    menus:
+      - id: autoconfigure
+        name: '自动装配'

@@ -10,5 +10,12 @@ version: 1.0
 formatterOn: "@formatter:on"
 ---
 
+# 自动装配
 
 
+
+使用过`Spring Boot`的同学都被其**开箱即用**的方式所折服，那么`Spring Boot`是如何实现**开箱即用**的呢？
+
+
+
+`@EnableAutoConfiguration`

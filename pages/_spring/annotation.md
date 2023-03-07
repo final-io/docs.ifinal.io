@@ -10,12 +10,12 @@ version: 1.0
 formatterOn: "@formatter:on"
 ---
 
-|    `@Annotation`    |             `Bean`              |           `Processor`            |                             `功能`                             |
-|:-------------------:|:-------------------------------:|:--------------------------------:|:------------------------------------------------------------:|
-|    `@Component`     |                                 |                                  |                                                              |
-|  `@ComponentScan`   |      `ConfigurationClass`       | `ComponentScanAnnotationParser`  |                                                              |
+|    `@Annotation`    |             `Bean`              |           `Processor`            |                             `功能`                              |
+|:-------------------:|:-------------------------------:|:--------------------------------:|:-------------------------------------------------------------:|
+|    `@Component`     |                                 |                                  |                                                               |
+|  `@ComponentScan`   |      `ConfigurationClass`       | `ComponentScanAnnotationParser`  |     [Spring 组件扫描](/spring/ioc/annotations/component-scan)     |
 | `@ExceptionHandler` | `ServletInvocableHandlerMethod` | `ExceptionHandlerMethodResolver` | [Spring MVC异常处理机制](/spring/mvc/annotations/exception-handler) |
-| `@ControllerAdvice` |     `ControllerAdviceBean`      | `ExceptionHandlerMethodResolver` |                                                              |
+| `@ControllerAdvice` |     `ControllerAdviceBean`      | `ExceptionHandlerMethodResolver` |                                                               |
 
 
 

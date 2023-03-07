@@ -7,6 +7,15 @@ menus:
   - id: annotation
     icon: dashboard
     name: '@Annotation'
+  - id: ioc
+    icon: dashboard
+    name: 'Spring IOC'
+    menus:
+      - id: annotations
+        name: '@Annotations'
+        menus:
+          - id: component-scan
+            name: '@ComponentScan'
   - id: mvc
     icon: 'dashboard'
     name: 'Spring MVC'

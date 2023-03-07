@@ -52,7 +52,7 @@
                                 :id="menu1.id +'--' + menu2.id" v-if="menu2.menus" >
                                 <li class="nav-item" v-for="(menu3,i3) in menu2.menus">
                                     <a class="nav-link"
-                                       :class="page.menus[0] == menu1.id && page.menus[1] == menu2.id && page.menus[2] == menu3.id && !menu2.menus  ? 'active' : '', menu3.menus ? 'dropdown-indicator' : ''"
+                                       :class="page.menus[2] == menu3.id && !menu3.menus  ? 'active' : '', menu3.menus ? 'dropdown-indicator' : ''"
                                        :href="menu3.menus ? '#' + menu1.id +'--' + menu2.id + '--' + menu3.id: menu3.url ? menu3.url : '/' + page.collection + '/'  + menu1.id + '/' + menu2.id + '/' + menu3.id "
                                        :data-bs-toggle="menu3.menus ? 'collapse' : ''"
                                        :aria-expanded="page.menus[0] == menu1.id && page.menus[1] == menu2.id && page.menus[2] == menu3.id" aria-controls="level-four">

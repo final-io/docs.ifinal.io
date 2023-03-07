@@ -4,6 +4,18 @@ menus:
   - id: overview
     icon: dashboard
     name: '概览'
+  - id: annotation
+    icon: dashboard
+    name: '@Annotation'
+  - id: mvc
+    icon: 'dashboard'
+    name: 'Spring MVC'
+    menus:
+      - id: annotations
+        name: '@Annotations'
+        menus:
+          - id: exception-handler
+            name: '@ExceptionHandler'
   - id: boot
     icon: dashboard
     name: 'Spring Boot'

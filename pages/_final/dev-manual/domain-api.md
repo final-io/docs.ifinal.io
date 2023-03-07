@@ -44,8 +44,8 @@ formatterOn: "@formatter:on"
 | `PreFilter`         |  `PreInsertFilter`   |             -             |             -             |                        -                         |                        -                         |
 | `PreConsumer`       | `PreInsertConsumer`  |    `PreDeleteConsumer`    |    `PreUpdateConsumer`    |                `PreListConsumer`                 |               `PreDetailConsumer`                |
 | `PostFilter`        |                      |                           |                           |                                                  |                                                  |
+| `DomainAction`      | `CreateDomainAction` |   `DeleteDomainAction`    |   `UpdateDomainAction`    |                `ListDomainAction`                |               `DetailDomainAction`               |
 | `PostQueryConsumer` |                      | `PostDeleteQueryConsumer` | `PostUpdateQueryConsumer` | `PostListQueryConsumer`<br />`PostQueryConsumer` |            `PostDetailQueryConsumer`             |
 | `PostConsumer`      | `PostInsertConsumer` |   `PostDeleteConsumer`    |   `PostUpdateConsumer`    |                `PostListConsumer`                |               `PostDetailConsumer`               |
-|                     |                      |                           |                           |                                                  |                                                  |
 |                     |                      |                           |                           |                                                  |                                                  |
 

@@ -16,6 +16,8 @@ menus:
         menus:
           - id: component-scan
             name: '@ComponentScan'
+      - id: validation
+        name: 'Validation'
   - id: mvc
     icon: 'dashboard'
     name: 'Spring MVC'
@@ -25,9 +27,20 @@ menus:
         menus:
           - id: exception-handler
             name: '@ExceptionHandler'
+  - id: security
+    icon: security
+    name: 'Spring Security'
+    menus:
+      - id: authentication
+        name: 'Authentication'
+        menus:
+          - id: basic
+            name: 'Basic'
   - id: boot
     icon: dashboard
     name: 'Spring Boot'
     menus:
       - id: autoconfigure
         name: '自动装配'
+      - id: validation
+        name: 'Validation'

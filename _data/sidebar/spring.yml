@@ -5,7 +5,7 @@ menus:
     icon: dashboard
     name: '概览'
   - id: annotation
-    icon: dashboard
+    icon: alternate_email
     name: '@Annotation'
   - id: ioc
     icon: dashboard
@@ -19,7 +19,7 @@ menus:
       - id: validation
         name: 'Validation'
   - id: mvc
-    icon: 'dashboard'
+    icon: 'web'
     name: 'Spring MVC'
     menus:
       - id: annotations
@@ -27,6 +27,8 @@ menus:
         menus:
           - id: exception-handler
             name: '@ExceptionHandler'
+      - id: resolver
+        name: 'HandlerMethodArgumentResolver'
   - id: security
     icon: security
     name: 'Spring Security'
@@ -34,10 +36,14 @@ menus:
       - id: authentication
         name: 'Authentication'
         menus:
+          - id: overview
+            name: 'OverView'
           - id: basic
             name: 'Basic'
+          - id: remember-me
+            name: 'Remember Me'
   - id: boot
-    icon: dashboard
+    icon: remove_circle_outline
     name: 'Spring Boot'
     menus:
       - id: autoconfigure

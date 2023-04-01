@@ -18,8 +18,8 @@ formatterOn: "@formatter:on"
 
 ## 特性
 
-* 简化的[API](./final-features/api)开发方式
-* [国际化](./final-features/i18n)
+* 简化的[API](features/api)开发方式
+* [国际化](features/i18n)
 
 ## 依赖
 

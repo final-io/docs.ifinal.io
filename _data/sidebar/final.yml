@@ -14,7 +14,7 @@ menus:
         name: '对象缓存映射'
       - id: cache
         name: '缓存'
-  - id: final-features
+  - id: features
     icon: tips_and_updates
     name: '特性'
     menus:
@@ -30,6 +30,8 @@ menus:
         name: 'Cache'
       - id: i18n
         name: 'I18N'
+      - id: validation
+        name: 'Validation'
   - id: user-manual
     icon: book
     name: '用户手册'
